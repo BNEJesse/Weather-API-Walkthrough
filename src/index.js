@@ -18,5 +18,4 @@ if (process.env.NODE_ENV === 'development') {
 
 app.use(routes);
 app.use(notFoundHandler);
-
 app.listen(PORT, () => logger.info(`app listen on port ${PORT}`));
