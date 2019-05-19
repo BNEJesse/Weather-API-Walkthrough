@@ -1,0 +1,24 @@
+{
+  "name": "Weather-API-Walkthrough",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BNEJesse/Weather-API-Walkthrough.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BNEJesse/Weather-API-Walkthrough/issues"
+  },
+  "homepage": "https://github.com/BNEJesse/Weather-API-Walkthrough#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.17.0"
+  }
+}
