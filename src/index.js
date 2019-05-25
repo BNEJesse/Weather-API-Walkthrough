@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const logger = require('./utils/logger');
 const notFoundHandler = require('./middlewares/notFound');
+const errorHandler = require('./middlewares/errorHandler');
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -17,5 +18,6 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(routes);
+app.use(errorHandler);
 app.use(notFoundHandler);
 app.listen(PORT, () => logger.info(`app listen on port ${PORT}`));
