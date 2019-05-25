@@ -2,6 +2,7 @@ const express = require('express');
 const axios = require('../utils/axios');
 const weather = require('../models/Weather');
 const router = express.Router();
+const responseFormatter = require('../utils/ResponseFormatter');
 
 router.get('/:cc/:city', (req, res) => {
   //   res.send('weather');
@@ -9,9 +10,7 @@ router.get('/:cc/:city', (req, res) => {
   const weatherType = req.query.weatherType;
   weather
     .getData(city, cc, weatherType)
-    .then(response => {
-      res.send(response);
-    })
+    .then(response => responseFormatter(res, 200, null, response))
     .catch(err => console.log(err));
 });
 
