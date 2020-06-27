@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/BNEJesse/Weather-API-Walkthrough#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "cors": "^2.8.5",
     "country-list": "^2.1.1",
     "dotenv": "^8.0.0",
